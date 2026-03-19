@@ -64,7 +64,7 @@ void TimeContainer::updateTimeStates(PlayerActorHakoniwa* p1)
     //Before allowing frame rewinds, check cooldown status
     if(isCooldown){
         cooldownCharge += cooldownRate;
-        if(cooldownCharge >= 0.1f){
+        if(cooldownCharge >= 0.0f){
             isCooldown = false;
             dotBounceIndex = timeFrames.size()+15;
             if(!p1->mDimKeeper->is2D)
